@@ -1,0 +1,27 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F3F4F6;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    .cart-item__remove:hover {
+      color: #EF4444;
+    }
