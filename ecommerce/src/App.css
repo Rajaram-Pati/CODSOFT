@@ -6,7 +6,7 @@
     }
     
     .gradient-bg {
-      background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+    background: url("herobg.jpg") no-repeat center center fixed;
     }
 
     .gradient-text {

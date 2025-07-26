@@ -200,10 +200,10 @@ function App() {
         <h2 className="text-4xl md:text-5xl font-bold mb-4">Build the Future with Robotics</h2>
         <p className="text-lg md:text-xl mb-8">Premium components for makers, educators and professionals</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button className="bg-white text-darker font-semibold px-6 py-3 rounded-lg hover:bg-opacity-90 transition shadow-lg">
+          <button className="bg-transparent text-darker border-2 font-semibold px-6 py-3 rounded-lg hover:bg-gray-400 transition shadow-lg">
             Shop Now <i className="fas fa-arrow-right ml-2"></i>
           </button>
-          <button className="bg-transparent border-2 border-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:bg-opacity-10 transition">
+          <button className="bg-transparent border-2 border-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-400 hover:bg-opacity-10 transition">
             Learn More
           </button>
         </div>
@@ -213,12 +213,15 @@ function App() {
 
   {/* <!-- Category Tabs --> */}
   <div className="container mx-auto px-4 py-8 sticky top-0 bg-white shadow-sm z-10">
-    <div className="flex overflow-x-auto space-x-4 pb-2">
+    <div className="flex overflow-x-auto space-x-15 pb-2">
       <button className="category-btn active px-4 py-2 rounded-full bg-primary text-white font-medium whitespace-nowrap">All Products</button>
       <button className="category-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Microcontrollers</button>
       <button className="category-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Sensors</button>
       <button className="category-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Motors</button>
       <button className="category-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Kits</button>
+      <button className="category-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Esc</button>
+      <button className="category-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Battery</button>
+      <button className="category-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Drone Parts</button>
       <button className="category-btn px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300 font-medium whitespace-nowrap">Tools</button>
     </div>
   </div>
@@ -229,8 +232,8 @@ function App() {
       {/* Product 1 */}
       <div className="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
         <div className="relative">
-          <img src="https://placehold.co/600x400?text=Arduino+Mega" alt="Arduino Mega 2560 R3 microcontroller board with USB cable" className="w-full h-48 object-cover"/>
-          <span className="absolute top-2 right-2 bg-secondary text-white text-xs px-2 py-1 rounded-full">BESTSELLER</span>
+          <img src="mega.jpg" alt="Arduino Mega 2560 R3 microcontroller board with USB cable" className="w-full h-48 object-cover"/>
+          <span className="absolute top-2 right-2 text-white bg-yellow-400 text-xs px-2 py-1 rounded-full">BESTSELLER</span>
         </div>
         <div className="p-4">
           <div className="flex justify-between items-start">
@@ -239,8 +242,8 @@ function App() {
           </div>
           <p className="text-gray-600 text-sm mt-1">Advanced microcontroller board</p>
           <div className="mt-3 flex items-center justify-between">
-            <span className="font-bold text-lg">$29.99</span>
-            <button className="add-to-cart bg-primary hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-sm transition">
+            <span className="font-bold text-lg">500/-</span>
+            <button className="add-to-cart bg-blue-700  hover:bg-blue-500 text-white px-3 py-1 rounded-lg text-sm transition">
               <i className="fas fa-cart-plus mr-1"></i> Add
             </button>
           </div>
@@ -250,7 +253,7 @@ function App() {
       {/* <!-- Product 2 --> */}
       <div className="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
         <div className="relative">
-          <img src="https://placehold.co/600x400?text=Raspberry+Pi+4" alt="Raspberry Pi 4 Model B single board computer with accessories" className="w-full h-48 object-cover"/>
+          <img src="py.jpg" alt="Raspberry Pi 4 Model B single board computer with accessories" className="w-full h-48 object-cover"/>
         </div>
         <div className="p-4">
           <div className="flex justify-between items-start">
@@ -259,8 +262,8 @@ function App() {
           </div>
           <p className="text-gray-600 text-sm mt-1">Powerful single-board computer</p>
           <div className="mt-3 flex items-center justify-between">
-            <span className="font-bold text-lg">$64.99</span>
-            <button className="add-to-cart bg-primary hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-sm transition">
+            <span className="font-bold text-lg">5120/-</span>
+            <button className="add-to-cart bg-blue-700 hover:bg-blue-500 text-white px-3 py-1 rounded-lg text-sm transition">
               <i className="fas fa-cart-plus mr-1"></i> Add
             </button>
           </div>
@@ -270,7 +273,7 @@ function App() {
       {/* <!-- Product 3 --> */}
       <div className="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
         <div className="relative">
-          <img src="https://placehold.co/600x400?text=Robotic+Arm" alt="5DOF robotic arm kit with servo motors and controller" className="w-full h-48 object-cover"/>
+          <img src="arm.jpg" alt="5DOF robotic arm kit with servo motors and controller" className="w-full h-48 object-cover"/>
           <span className="absolute top-2 right-2 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">NEW</span>
         </div>
         <div className="p-4">
@@ -280,8 +283,8 @@ function App() {
           </div>
           <p className="text-gray-600 text-sm mt-1">Precision control robotic arm</p>
           <div className="mt-3 flex items-center justify-between">
-            <span className="font-bold text-lg">$89.99</span>
-            <button className="add-to-cart bg-primary hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-sm transition">
+            <span className="font-bold text-lg">7565/-</span>
+            <button className="add-to-cart bg-blue-700 hover:bg-blue-500 text-white px-3 py-1 rounded-lg text-sm transition">
               <i className="fas fa-cart-plus mr-1"></i> Add
             </button>
           </div>
@@ -291,7 +294,7 @@ function App() {
       {/* <!-- Product 4 --> */}
       <div className="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
         <div className="relative">
-          <img src="https://placehold.co/600x400?text=LIDAR+Sensor" alt="360-degree LIDAR distance measurement sensor module" className="w-full h-48 object-cover"/>
+          <img src="Lider-sensor.jpg" alt="360-degree LIDAR distance measurement sensor module" className="w-full h-48 object-cover"/>
         </div>
         <div className="p-4">
           <div className="flex justify-between items-start">
@@ -300,8 +303,8 @@ function App() {
           </div>
           <p className="text-gray-600 text-sm mt-1">High-precision distance measurement</p>
           <div className="mt-3 flex items-center justify-between">
-            <span className="font-bold text-lg">$124.99</span>
-            <button className="add-to-cart bg-primary hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-sm transition">
+            <span className="font-bold text-lg">10,540/-</span>
+            <button className="add-to-cart bg-blue-700 hover:bg-blue-500 text-white px-3 py-1 rounded-lg text-sm transition">
               <i className="fas fa-cart-plus mr-1"></i> Add
             </button>
           </div>
@@ -311,7 +314,7 @@ function App() {
       {/* <!-- Product 5 --> */}
       <div className="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
         <div className="relative">
-          <img src="https://placehold.co/600x400?text=DC+Gear+Motors" alt="Set of 4 DC gear motors with rubber wheels" className="w-full h-48 object-cover"/>
+          <img src="motor.jpg" alt="Set of 4 DC gear motors with rubber wheels" className="w-full h-48 object-cover"/>
         </div>
         <div className="p-4">
           <div className="flex justify-between items-start">
@@ -320,8 +323,8 @@ function App() {
           </div>
           <p className="text-gray-600 text-sm mt-1">Set of 4 motors with wheels</p>
           <div className="mt-3 flex items-center justify-between">
-            <span className="font-bold text-lg">$24.99</span>
-            <button className="add-to-cart bg-primary hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-sm transition">
+            <span className="font-bold text-lg">2,000/-</span>
+            <button className="add-to-cart bg-blue-700 hover:bg-blue-500 text-white px-3 py-1 rounded-lg text-sm transition">
               <i className="fas fa-cart-plus mr-1"></i> Add
             </button>
           </div>
@@ -331,7 +334,7 @@ function App() {
       {/* <!-- Product 6 --> */}
       <div className="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
         <div className="relative">
-          <img src="https://placehold.co/600x400?text=LED+Matrix" alt="8x8 RGB LED matrix panel with rainbow color display" className="w-full h-48 object-cover"/>
+          <img src="led.jpg" alt="8x8 RGB LED matrix panel with rainbow color display" className="w-full h-48 object-cover"/>
         </div>
         <div className="p-4">
           <div className="flex justify-between items-start">
@@ -340,8 +343,8 @@ function App() {
           </div>
           <p className="text-gray-600 text-sm mt-1">Bright colorful display panel</p>
           <div className="mt-3 flex items-center justify-between">
-            <span className="font-bold text-lg">$14.99</span>
-            <button className="add-to-cart bg-primary hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-sm transition">
+            <span className="font-bold text-lg">1,000/-</span>
+            <button className="add-to-cart bg-blue-700 hover:bg-blue-500 text-white px-3 py-1 rounded-lg text-sm transition">
               <i className="fas fa-cart-plus mr-1"></i> Add
             </button>
           </div>
@@ -351,7 +354,7 @@ function App() {
       {/* <!-- Product 7 --> */}
       <div className="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
         <div className="relative">
-          <img src="https://placehold.co/600x400?text=ESP32+Dev+Kit" alt="ESP32 development board with WiFi and Bluetooth" className="w-full h-48 object-cover"/>
+          <img src="esp.jpg" alt="ESP32 development board with WiFi and Bluetooth" className="w-full h-48 object-cover"/>
           <span className="absolute top-2 right-2 bg-secondary text-white text-xs px-2 py-1 rounded-full">BESTSELLER</span>
         </div>
         <div className="p-4">
@@ -361,8 +364,8 @@ function App() {
           </div>
           <p className="text-gray-600 text-sm mt-1">WiFi & Bluetooth enabled</p>
           <div className="mt-3 flex items-center justify-between">
-            <span className="font-bold text-lg">$19.99</span>
-            <button className="add-to-cart bg-primary hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-sm transition">
+            <span className="font-bold text-lg">1,999/-</span>
+            <button className="add-to-cart bg-blue-700 hover:bg-blue-500 text-white px-3 py-1 rounded-lg text-sm transition">
               <i className="fas fa-cart-plus mr-1"></i> Add
             </button>
           </div>
@@ -372,7 +375,7 @@ function App() {
       {/* <!-- Product 8 --> */}
       <div className="product-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
         <div className="relative">
-          <img src="https://placehold.co/600x400?text=UltraSonic+Sensor" alt="HC-SR04 ultrasonic distance measurement sensor" className="w-full h-48 object-cover"/>
+          <img src="ultrasonic.jpg" alt="HC-SR04 ultrasonic distance measurement sensor" className="w-full h-48 object-cover"/>
         </div>
         <div className="p-4">
           <div className="flex justify-between items-start">
@@ -381,8 +384,8 @@ function App() {
           </div>
           <p className="text-gray-600 text-sm mt-1">Distance measurement module</p>
           <div className="mt-3 flex items-center justify-between">
-            <span className="font-bold text-lg">$3.99</span>
-            <button className="add-to-cart bg-primary hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-sm transition">
+            <span className="font-bold text-lg">200/-</span>
+            <button className="add-to-cart bg-blue-700 hover:bg-blue-500 text-white px-3 py-1 rounded-lg text-sm transition">
               <i className="fas fa-cart-plus mr-1"></i> Add
             </button>
           </div>
@@ -435,7 +438,7 @@ function App() {
   <div id="backdrop" className="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
 
   {/* <!-- Footer --> */}
-  <footer className="bg-darker text-white py-12">
+  <footer className="bg-gray-800 text-white py-12">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
